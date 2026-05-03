@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Colliers Chile | Expertos en Servicios Inmobiliarios Corporativos</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#fdd977",
+                        "on-primary-fixed": "#001453",
+                        "surface": "#121414",
+                        "background": "#121414",
+                        "on-tertiary-container": "#d7e5fb",
+                        "tertiary-fixed": "#d6e4f9",
+                        "on-error-container": "#ffdad6",
+                        "secondary-container": "#785d00",
+                        "on-secondary": "#3d2e00",
+                        "secondary-fixed-dim": "#e6c364",
+                        "on-tertiary-fixed": "#0f1c2c",
+                        "on-tertiary-fixed-variant": "#3a4859",
+                        "surface-container": "#1e2020",
+                        "on-primary-fixed-variant": "#0037b8",
+                        "inverse-on-surface": "#2f3131",
+                        "on-secondary-fixed-variant": "#584400",
+                        "primary-fixed-dim": "#b7c4ff",
+                        "surface-bright": "#38393a",
+                        "inverse-primary": "#084ced",
+                        "surface-container-highest": "#333535",
+                        "on-secondary-fixed": "#241a00",
+                        "primary-container": "#1c54f4",
+                        "on-tertiary": "#243141",
+                        "secondary": "#e6c364",
+                        "on-surface-variant": "#c3c5d9",
+                        "tertiary": "#bac8dc",
+                        "error-container": "#93000a",
+                        "tertiary-fixed-dim": "#bac8dc",
+                        "on-primary": "#002584",
+                        "error": "#ffb4ab",
+                        "on-background": "#e2e2e2",
+                        "surface-container-low": "#1a1c1c",
+                        "tertiary-container": "#596779",
+                        "on-error": "#690005",
+                        "outline": "#8d90a2",
+                        "secondary-fixed": "#ffe08f",
+                        "on-surface": "#e2e2e2",
+                        "surface-container-high": "#282a2b",
+                        "primary-fixed": "#dde1ff",
+                        "surface-dim": "#121414",
+                        "surface-variant": "#333535",
+                        "surface-tint": "#b7c4ff",
+                        "outline-variant": "#434656",
+                        "on-primary-container": "#dfe2ff",
+                        "primary": "#b7c4ff",
+                        "inverse-surface": "#e2e2e2",
+                        "surface-container-lowest": "#0c0f0f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "xs": "4px",
+                        "lg": "48px",
+                        "base": "8px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "xl": "80px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "display-xl": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "caption": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "display-xl": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .glass-panel {
+            background: rgba(18, 20, 20, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(183, 196, 255, 0.1);
+        }
+        .text-glow:hover {
+            text-shadow: 0 0 8px rgba(183, 196, 255, 0.5);
+        }
+        section { scroll-margin-top: 80px; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary selection:text-on-primary">
+<!-- 1. TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-xl border-b border-blue-500/20 shadow-2xl shadow-blue-900/20">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black text-white tracking-tighter">Colliers Chile</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-inter tracking-tight font-medium text-blue-500 border-b-2 border-blue-500 pb-1" href="#">Servicios</a>
+<a class="font-inter tracking-tight font-medium text-slate-300 hover:text-blue-400 transition-colors" href="#">Propiedades</a>
+<a class="font-inter tracking-tight font-medium text-slate-300 hover:text-blue-400 transition-colors" href="#">Expertos</a>
+<a class="font-inter tracking-tight font-medium text-slate-300 hover:text-blue-400 transition-colors" href="#">Reportes</a>
+<a class="font-inter tracking-tight font-medium text-slate-300 hover:text-blue-400 transition-colors" href="#">Sobre Nosotros</a>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label-md hover:bg-secondary-container transition-all duration-300 scale-95 active:scale-100">
+                Hablar con un experto
+            </button>
+</div>
+</nav>
+<!-- 2. Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A cinematic, low-angle night photograph of the Gran Torre Santiago skyscraper in Chile, reaching into a dark indigo sky. The building is illuminated with sharp blue and white architectural lighting, reflecting a modern, institutional corporate identity. Deep black gradients overlay the bottom half of the image to ensure clear typography. The overall atmosphere is prestigious, high-stakes, and technologically advanced, echoing the sophisticated dark mode aesthetic of a private wealth management firm." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2AB9mCbcjzyZsC0u814yOFCMj-lwkQX0fhUIpRQ4HUnoML7b82j1IYmd00zrcSISyyyCmS8Gxk4TX-glogQL35DLA9ylBRD85Y3gh73jBL3XwIbOsgXDysLz46exAKUz4nZw-ybUP1o46BAQ1UVEbHEjf5UtOoTKOFHP-cBdo6XtdV4Ww5-W-zRRKzhILAwpEUivuXbYT3EpKw0_VRpRIa2j3yZRHMqBCBXGm2xMFsVI4eyLghKA_iwPVKqbZwFgHnj83-zDv_NY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-4xl">
+<h1 class="font-display-xl text-white mb-6">Acelera tus decisiones inmobiliarias con los mejores expertos de Chile</h1>
+<p class="font-body-lg text-on-surface-variant mb-12">Más de 30 años liderando el mercado comercial, industrial e inversiones en Chile.</p>
+<div class="glass-panel p-6 rounded-xl border-l-4 border-secondary shadow-2xl">
+<form class="grid grid-cols-1 md:grid-cols-5 gap-4 items-end">
+<div class="md:col-span-1">
+<label class="block text-caption text-secondary mb-2 uppercase tracking-widest font-bold">Nombre</label>
+<input class="w-full bg-surface-container-low border-b border-outline-variant text-white p-3 focus:border-primary focus:ring-0 outline-none" placeholder="Tu nombre" type="text"/>
+</div>
+<div class="md:col-span-1">
+<label class="block text-caption text-secondary mb-2 uppercase tracking-widest font-bold">Email</label>
+<input class="w-full bg-surface-container-low border-b border-outline-variant text-white p-3 focus:border-primary focus:ring-0 outline-none" placeholder="nombre@empresa.com" type="email"/>
+</div>
+<div class="md:col-span-1">
+<label class="block text-caption text-secondary mb-2 uppercase tracking-widest font-bold">Teléfono</label>
+<input class="w-full bg-surface-container-low border-b border-outline-variant text-white p-3 focus:border-primary focus:ring-0 outline-none" placeholder="+56 9..." type="tel"/>
+</div>
+<div class="md:col-span-1">
+<label class="block text-caption text-secondary mb-2 uppercase tracking-widest font-bold">Necesidad</label>
+<select class="w-full bg-surface-container-low border-b border-outline-variant text-white p-3 focus:border-primary focus:ring-0 outline-none appearance-none">
+<option>Oficinas</option>
+<option>Industrial</option>
+<option>Retail</option>
+<option>Inversión</option>
+</select>
+</div>
+<div class="md:col-span-1">
+<button class="w-full bg-primary-container text-on-primary-container font-label-md py-4 rounded-lg hover:bg-primary transition-colors">
+                                Quiero asesoría gratuita
+                            </button>
+</div>
+</form>
+<p class="mt-4 text-caption text-on-surface-variant italic">Sin compromiso. Te contactamos en menos de 24 horas.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Numbers Ribbon -->
+<section class="bg-surface-container-highest py-12 border-y border-outline-variant/30">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="text-center">
+<div class="font-display-lg text-secondary">+30</div>
+<div class="font-label-md text-on-surface-variant">Años en el mercado</div>
+</div>
+<div class="text-center">
+<div class="font-display-lg text-white">+500</div>
+<div class="font-label-md text-on-surface-variant">Transacciones anuales</div>
+</div>
+<div class="text-center">
+<div class="font-display-lg text-white">$1.000M+</div>
+<div class="font-label-md text-on-surface-variant">USD en activos</div>
+</div>
+<div class="text-center">
+<div class="font-display-lg text-white">68</div>
+<div class="font-label-md text-on-surface-variant">Países con presencia</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Services Grid -->
+<section class="py-xl bg-background">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<span class="text-secondary font-label-md tracking-widest uppercase">Especialización</span>
+<h2 class="font-headline-lg text-white mt-2">Soluciones inmobiliarias para cada etapa de tu negocio</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="group glass-panel p-8 rounded-xl hover:border-primary transition-all duration-300">
+<div class="w-12 h-12 bg-primary-container rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-primary-container">corporate_fare</span>
+</div>
+<h3 class="font-headline-md text-white mb-4">Arriendo y Venta de Oficinas</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Optimización de espacios corporativos y búsqueda estratégica de sedes empresariales.</p>
+<a class="text-primary font-label-md flex items-center group-hover:gap-2 transition-all" href="#">Saber más <span class="material-symbols-outlined ml-1">arrow_forward</span></a>
+</div>
+<!-- Card 2 -->
+<div class="group glass-panel p-8 rounded-xl hover:border-primary transition-all duration-300">
+<div class="w-12 h-12 bg-primary-container rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-primary-container">factory</span>
+</div>
+<h3 class="font-headline-md text-white mb-4">Propiedades Industriales</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Logística de vanguardia y parques industriales estratégicamente ubicados.</p>
+<a class="text-primary font-label-md flex items-center group-hover:gap-2 transition-all" href="#">Saber más <span class="material-symbols-outlined ml-1">arrow_forward</span></a>
+</div>
+<!-- Card 3 -->
+<div class="group glass-panel p-8 rounded-xl hover:border-primary transition-all duration-300">
+<div class="w-12 h-12 bg-primary-container rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-primary-container">shopping_bag</span>
+</div>
+<h3 class="font-headline-md text-white mb-4">Retail y Locales</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Posicionamiento en los polos comerciales de mayor tráfico en todo el país.</p>
+<a class="text-primary font-label-md flex items-center group-hover:gap-2 transition-all" href="#">Saber más <span class="material-symbols-outlined ml-1">arrow_forward</span></a>
+</div>
+<!-- Card 4 -->
+<div class="group glass-panel p-8 rounded-xl hover:border-primary transition-all duration-300">
+<div class="w-12 h-12 bg-primary-container rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-primary-container">account_balance</span>
+</div>
+<h3 class="font-headline-md text-white mb-4">Inversión y Activos</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Maximización de retornos mediante gestión profesional de portafolios inmobiliarios.</p>
+<a class="text-primary font-label-md flex items-center group-hover:gap-2 transition-all" href="#">Saber más <span class="material-symbols-outlined ml-1">arrow_forward</span></a>
+</div>
+<!-- Card 5 -->
+<div class="group glass-panel p-8 rounded-xl hover:border-primary transition-all duration-300">
+<div class="w-12 h-12 bg-primary-container rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-primary-container">analytics</span>
+</div>
+<h3 class="font-headline-md text-white mb-4">Valoraciones y Tasaciones</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Certidumbre técnica y financiera bajo estándares internacionales RICS.</p>
+<a class="text-primary font-label-md flex items-center group-hover:gap-2 transition-all" href="#">Saber más <span class="material-symbols-outlined ml-1">arrow_forward</span></a>
+</div>
+<!-- Card 6 -->
+<div class="group glass-panel p-8 rounded-xl hover:border-primary transition-all duration-300">
+<div class="w-12 h-12 bg-primary-container rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-primary-container">insights</span>
+</div>
+<h3 class="font-headline-md text-white mb-4">Consultoría Estratégica</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Inteligencia de mercado aplicada para reducir riesgos en el desarrollo inmobiliario.</p>
+<a class="text-primary font-label-md flex items-center group-hover:gap-2 transition-all" href="#">Saber más <span class="material-symbols-outlined ml-1">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Featured Properties -->
+<section class="py-xl bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<span class="text-secondary font-label-md tracking-widest uppercase">Portafolio</span>
+<h2 class="font-headline-lg text-white mt-2">Propiedades disponibles ahora</h2>
+</div>
+<div class="flex flex-wrap gap-4">
+<button class="px-4 py-2 bg-primary text-on-primary rounded-full font-label-md">Todos</button>
+<button class="px-4 py-2 hover:bg-surface-variant text-on-surface rounded-full font-label-md transition-colors">Oficinas</button>
+<button class="px-4 py-2 hover:bg-surface-variant text-on-surface rounded-full font-label-md transition-colors">Industrial</button>
+<button class="px-4 py-2 hover:bg-surface-variant text-on-surface rounded-full font-label-md transition-colors">Retail</button>
+<button class="px-4 py-2 hover:bg-surface-variant text-on-surface rounded-full font-label-md transition-colors">Inversión</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-12">
+<!-- Property 1 -->
+<div class="group bg-surface rounded-xl overflow-hidden border border-outline-variant/30 hover:border-primary/50 transition-all">
+<div class="relative h-64">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A high-end modern glass office building in the Las Condes financial district of Santiago, Chile, during the blue hour. The building features sleek vertical glass panels and a glowing interior that suggests corporate activity. The shot is captured with a professional wide-angle lens, emphasizing the architectural scale. The lighting is sophisticated, with deep blues and crisp whites, set against a darkening sky to maintain the luxury dark mode brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbHVs_gFgW82VChiUM-7x5WEzvg0DcNUcAyzT9ncwjQtGPN9BykEmuTSIDrqDCRH5pg2MVwnGGUIv4QZnlXsrERPHWF68ZAiQwm2Hv9tAr_VL2KNNY8FA2kB3l4bI5Rm8_dPiaTnRVRVUnnaQQF6I5cnfXodUfPF7ul9hjWc5Xa_dusydKhPftdUiuVmIoamMZQqt-v3ye76SYAd28SmqgHhA5PRkJQy5uEehhnkW2ruP467F_Hjy7IoPVm2YQwK6udAAPi3Nl0L4"/>
+<div class="absolute top-4 left-4 bg-primary text-on-primary text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded">Oficina Premium</div>
+</div>
+<div class="p-6">
+<h4 class="font-headline-md text-white mb-2">Edificio Titanium</h4>
+<p class="font-caption text-on-surface-variant flex items-center mb-4"><span class="material-symbols-outlined text-[16px] mr-1">location_on</span> Las Condes, Santiago</p>
+<div class="flex justify-between items-center py-4 border-t border-outline-variant/30">
+<div>
+<span class="block font-label-md text-secondary">UF 0,62 / m²</span>
+<span class="text-caption text-on-surface-variant">Desde 450 m²</span>
+</div>
+<button class="bg-surface-variant text-white px-4 py-2 rounded font-label-md hover:bg-primary hover:text-on-primary transition-colors">Ver detalle</button>
+</div>
+</div>
+</div>
+<!-- Property 2 -->
+<div class="group bg-surface rounded-xl overflow-hidden border border-outline-variant/30 hover:border-primary/50 transition-all">
+<div class="relative h-64">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A sprawling, state-of-the-art industrial warehouse and logistics center at dusk. The facility features numerous loading docks with modern sectional doors and high-mast LED lighting illuminating the expansive concrete yard. The sky is a deep twilight navy, creating a strong contrast with the technical lighting. The visual style is crisp and commercial, emphasizing scale, efficiency, and industrial excellence in a sophisticated dark palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuApZ-jGJRv0sp1k1Otaf-sFKqPf9gWJnPJxbXfrqETXAPvKCzMZl4pb_65KC2d-iqqSmO43K-DWipeayb_C_voSDOK6Kyrmf2jQRcdtOVjoWJ4uBsEjhlbA95Rk5-XJRBpxkRw88iXfVrIrGWjsMuC5NgFqpO0k2fBcWzoibtl1OeUQbsw0OAhk9KjdQ4HthbrxqLomx1d7tj5nfbA6ZVAZZb-unBKwqbzauXqgvP-KhRl40PCzlDvcRsErqtDvs7rl9ITm_NjgGec"/>
+<div class="absolute top-4 left-4 bg-secondary text-on-secondary text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded">Industrial Logístico</div>
+</div>
+<div class="p-6">
+<h4 class="font-headline-md text-white mb-2">Parque Logístico Pudahuel</h4>
+<p class="font-caption text-on-surface-variant flex items-center mb-4"><span class="material-symbols-outlined text-[16px] mr-1">location_on</span> Pudahuel, Santiago</p>
+<div class="flex justify-between items-center py-4 border-t border-outline-variant/30">
+<div>
+<span class="block font-label-md text-secondary">UF 0,14 / m²</span>
+<span class="text-caption text-on-surface-variant">2.500 m² disponibles</span>
+</div>
+<button class="bg-surface-variant text-white px-4 py-2 rounded font-label-md hover:bg-primary hover:text-on-primary transition-colors">Ver detalle</button>
+</div>
+</div>
+</div>
+<!-- Property 3 -->
+<div class="group bg-surface rounded-xl overflow-hidden border border-outline-variant/30 hover:border-primary/50 transition-all">
+<div class="relative h-64">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A high-end retail storefront in an upscale shopping district during evening hours. The shop features large floor-to-ceiling glass windows displaying a luxury brand, with warm interior lighting spilling onto a dark stone sidewalk. The architectural lines are sharp and minimal. The image uses a cinematic color grade with deep blacks and vibrant golden highlights to evoke a sense of exclusivity and commercial prosperity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3i6pKXBQGOTA0UnDexsRUWlcMLUDZzNg_YiXr39AKBavFWsxrP8CEH3qym3kIEx67E60Vi2-wGRUYoKwB4Ld-ka1BAeETF17QWckDxLfkZBJBCvvOIvMKNmu2_pCpkJaWi8LsOZRvynTdieKvbS4IpIQDDYY2iYtbzXByz477KdjsMbGntMGBmiYSiB9hkow_WIg6uFTeAggZBmAOtxp0H1MfgE9eXRyGDt4oZ6hj2AxuTwGQg6JhCXLS1rdGDebeluT3-jZObDg"/>
+<div class="absolute top-4 left-4 bg-tertiary-container text-on-tertiary-container text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded">Retail High-Street</div>
+</div>
+<div class="p-6">
+<h4 class="font-headline-md text-white mb-2">Local Comercial Providencia</h4>
+<p class="font-caption text-on-surface-variant flex items-center mb-4"><span class="material-symbols-outlined text-[16px] mr-1">location_on</span> Providencia, Santiago</p>
+<div class="flex justify-between items-center py-4 border-t border-outline-variant/30">
+<div>
+<span class="block font-label-md text-secondary">UF 0,85 / m²</span>
+<span class="text-caption text-on-surface-variant">120 m² frontales</span>
+</div>
+<button class="bg-surface-variant text-white px-4 py-2 rounded font-label-md hover:bg-primary hover:text-on-primary transition-colors">Ver detalle</button>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center">
+<button class="bg-transparent border border-primary text-primary px-8 py-4 rounded font-label-md hover:bg-primary hover:text-on-primary transition-all">
+                    Ver todas las propiedades disponibles <span class="material-symbols-outlined align-middle ml-2">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- 6. Market Reports -->
+<section class="py-xl relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-slate-950 via-blue-950/20 to-slate-950"></div>
+<div class="relative z-10 max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="font-display-lg text-white mb-4">Inteligencia de mercado que te da ventaja</h2>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">Nuestros analistas procesan datos en tiempo real para brindarte una visión privilegiada del sector inmobiliario corporativo.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-surface-container-high rounded-xl p-8 border border-outline-variant/50 flex flex-col items-center text-center">
+<div class="w-full aspect-[3/4] bg-slate-900 rounded mb-6 overflow-hidden relative group">
+<img class="w-full h-full object-cover" data-alt="A professional market report cover featuring a stylized dark blue map of Chile and complex data visualization graphs in electric blue and gold. The title text is clean and bold white typography. The image is framed as a digital document mockup on a tablet screen, lying on a dark executive desk. The lighting is focused and professional, highlighting the depth of data and the authority of the analysis." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0w86zIlV9QP5J-fLwVic3atK2N3ZIHWh5PyUn7DWiY0hS68PitkB7KlzzN9Fqs9n9G7KnFONVGvtCtsj_zTEGqSBrZIjudEMtjsyLNcYo17tN9ESVbPFtg91ottjpz93WbSLeRi5-uq9HvNfne7bqfGAlnV6QmTSJEvHwNMg6mKMCIHLV-AZ6FdenOOJdRfCK-E07RYmbWLYa5znOIiANJE_J5fc-Lavukv0rj9ERb1ZvJ6b8_SHD16GHc1lmJBtDEdXmPmVUAiA"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-5xl">picture_as_pdf</span>
+</div>
+</div>
+<h4 class="font-headline-md text-white mb-2">Reporte de Oficinas Q4</h4>
+<p class="font-body-md text-on-surface-variant mb-6">Análisis trimestral de vacancia, absorción y precios en Santiago.</p>
+<button class="mt-auto w-full bg-surface-variant text-white py-3 rounded font-label-md hover:bg-primary transition-colors">Descargar PDF</button>
+</div>
+<div class="bg-surface-container-high rounded-xl p-8 border border-outline-variant/50 flex flex-col items-center text-center">
+<div class="w-full aspect-[3/4] bg-slate-900 rounded mb-6 overflow-hidden relative group">
+<img class="w-full h-full object-cover" data-alt="A macro photograph of a computer screen showing high-end real estate data visualizations, heatmaps, and trend lines in a sophisticated electric blue and gold color scheme. The focus is sharp on a specific data cluster while the background softly blurs into a dark office environment. This represents modern market intelligence and technological superiority in real estate consulting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoHDfUmWgwmCgMnkAs6iuG56dbyINK-NnwovlLFbHIJJWD2gg6OOWa_eDLX2nMd9-N8b5T0KP-evskKleF0bi5Q-XQt08b6GhtyKvA1DpOumexegqo2GQWe3AK5sBtSlJAi1gmYxE3pK9U1b9MhYsmtalB1fY6uaa-PEaXciHK7DENJzQpUyS2KKxNygu--DWhSaIEIS3v8z12GMNDmeaMeurVvk4EFLo-C9fS3gY-9GXWpAhiJvubCAFKNl5Xo9uY0sxBlMHQ9w8"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-5xl">picture_as_pdf</span>
+</div>
+</div>
+<h4 class="font-headline-md text-white mb-2">Industrial &amp; Logística 2024</h4>
+<p class="font-body-md text-on-surface-variant mb-6">Proyecciones de crecimiento y nuevos centros de distribución.</p>
+<button class="mt-auto w-full bg-surface-variant text-white py-3 rounded font-label-md hover:bg-primary transition-colors">Descargar PDF</button>
+</div>
+<div class="bg-surface-container-high rounded-xl p-8 border border-outline-variant/50 flex flex-col items-center text-center">
+<div class="w-full aspect-[3/4] bg-slate-900 rounded mb-6 overflow-hidden relative group">
+<img class="w-full h-full object-cover" data-alt="A group of corporate professionals sitting in a darkened glass-walled conference room in Santiago, reviewing digital market charts projected on a screen. The lighting is moody and focused, highlighting the serious, high-stakes nature of corporate consulting. The palette is dominated by dark navy, blacks, and electric blue accents from the digital screens, emphasizing authority and expert knowledge." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFY1uoT2PvqV3UwzVM5fwjQvmDJ_Z458tk6DdA2BkGthXDdZq560AkVJ246MxK2_jZIgewebRq5u8H_Oeb3j-Vw3CGDZY8wmZDqX1ksluIdsAu-bCJ-rOR9LIYzWt9Kb5O5qO7IcsYmeBLHYEt9nOTPBVZ1CIwJrFqFgD_guraptRGzgvZgk7oKmAJK2PXond4eeGAL-MgO4XbHptX2QhvtwuTIoH_sNawPXqIeL6V7CCX-XwsLr5GmXkbwwItHC3u77u9aPlRzNI"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-5xl">picture_as_pdf</span>
+</div>
+</div>
+<h4 class="font-headline-md text-white mb-2">Retail Market Beat</h4>
+<p class="font-body-md text-on-surface-variant mb-6">Evolución del consumo y su impacto en m² de locales comerciales.</p>
+<button class="mt-auto w-full bg-surface-variant text-white py-3 rounded font-label-md hover:bg-primary transition-colors">Descargar PDF</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Why Colliers -->
+<section class="py-xl bg-surface">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<div class="absolute -top-4 -left-4 w-32 h-32 border-l border-t border-secondary"></div>
+<img class="rounded-lg shadow-2xl relative z-10" data-alt="A high-end portrait of two corporate executives in tailored suits, one male and one female, standing confidently in a luxury penthouse office overlooking the city of Santiago. The lighting is dramatic and warm, with the setting sun reflecting off glass surfaces. The overall aesthetic is one of institutional authority, partnership, and high-level strategic confidence, consistent with a premium real estate advisory firm." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALsO0mp5WxocNgirfy4SuTjW8kHMX6lgA38KcuHRR06M7vW2v67HP8T4WhSZtBFarHY1WwUIGy2eAI0qh4h6trMUEX83FIUAg7_OhSSCXC9__Tf7f9QSz8WGY3wE_HmD3Hci7Yyg9yrArmPJpEcWTGO2V12-QE2DwYQESoWprr9BABQLYYFUO8-do3OTgY-GZ7el1_b8ZVYwlngYmuX8DqZZAbLZAViaS1Dxvysh6TlJeM_fyGnubYCm1_w-Fi5YWCLI_jR8ZC6TA"/>
+<div class="absolute -bottom-4 -right-4 w-32 h-32 border-r border-b border-primary"></div>
+</div>
+<div>
+<span class="text-secondary font-label-md tracking-widest uppercase">Valor Agregado</span>
+<h2 class="font-display-lg text-white mt-4 mb-8 leading-tight">Tu aliado estratégico en cada decisión</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full border border-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">public</span>
+</div>
+<div>
+<h4 class="font-headline-md text-white mb-2">Red global</h4>
+<p class="font-body-md text-on-surface-variant">Acceso inmediato a inversionistas y corporaciones en más de 68 países.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full border border-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">groups</span>
+</div>
+<div>
+<h4 class="font-headline-md text-white mb-2">Equipo especializado</h4>
+<p class="font-body-md text-on-surface-variant">Profesionales con décadas de experiencia en cada nicho del mercado.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full border border-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">query_stats</span>
+</div>
+<div>
+<h4 class="font-headline-md text-white mb-2">Datos en tiempo real</h4>
+<p class="font-body-md text-on-surface-variant">Propiedad intelectual exclusiva y plataformas de data-mining avanzado.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full border border-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">handshake</span>
+</div>
+<div>
+<h4 class="font-headline-md text-white mb-2">Acompañamiento end-to-end</h4>
+<p class="font-body-md text-on-surface-variant">Desde la prospección hasta el cierre final, cuidamos cada detalle.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. Experts Grid -->
+<section class="py-xl bg-background">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-white mb-4">Habla directamente con quienes conocen el mercado</h2>
+<p class="text-on-surface-variant font-body-md">Nuestro liderazgo senior está a una llamada de distancia.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-gutter">
+<!-- Expert 1 -->
+<div class="text-center group">
+<div class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-2 border-transparent group-hover:border-primary transition-all p-1">
+<img class="w-full h-full object-cover rounded-full" data-alt="A professional headshot of a senior male executive in a dark navy business suit and silver tie. He is smiling confidently against a blurred high-end office background. The lighting is soft and flattering, emphasizing his expertise and approachable professionalism. The overall tone is institutional and high-status, aligning with the Colliers corporate brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCaJPetphvWv1SOM7nO_fzmtVP_PsOBBchme0yAsrqwujnkCBSxf5AIn2mTGxtKZGF46RDLeyfrpqDLh0yJ5zdG5GFJjpevPOIi36_2G1GRyXT4IUb10P-6Uu0DU0JXUBRZA0oPwCdZU7FcS_dqK6eOmlTUJzYRqh556TcEjHSMc4C2L-hK_sSwNHk7O4NrSgK2a-3S-VqiKbiydyqIbyrpJM_rA15C7-1OH7pGNkOFVG1FHjcfxJVm_KAFzNBCrhf9wRbIJ5GJMY"/>
+</div>
+<h4 class="font-headline-md text-white">Roberto Schmidt</h4>
+<p class="text-secondary font-label-md mb-2">Managing Director</p>
+<p class="text-caption text-on-surface-variant mb-4">25+ años de experiencia</p>
+<button class="bg-surface-variant hover:bg-primary px-6 py-2 rounded text-white font-label-md transition-all">Contactar</button>
+</div>
+<!-- Expert 2 -->
+<div class="text-center group">
+<div class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-2 border-transparent group-hover:border-primary transition-all p-1">
+<img class="w-full h-full object-cover rounded-full" data-alt="A professional headshot of a senior female executive in a black blazer and white blouse. She has an expression of calm authority and professional intelligence. The background is a minimalist corporate setting with subtle glass reflections. The lighting is bright and clean, emphasizing a modern and transparent business approach in the high-end real estate sector." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUttpeThGkQTgfU3GhlxtbKdS6KNE0FV2jtvm8NrpVveajNZfMKnzAfKcCWuUeizAVFtD7R4VEM3rYQ5FG8v6GC6UXkKpECfjSx76dWUM2MGle1MSGU9lxwkFPk64seUUocs9zJE6hkB6rEnOrdQ5mISQceg-Mq7D9WcIbddSuCxKqsHSXkQLskB8gZJR_1uTKGFAO59o1Rd-ybPccT5A1rlsqb26EzlT9plhUK1dSOV1r-FrfDcHpEKaxCY7uNnFYjweiVTC5t3I"/>
+</div>
+<h4 class="font-headline-md text-white">Valentina Pérez</h4>
+<p class="text-secondary font-label-md mb-2">Directora de Oficinas</p>
+<p class="text-caption text-on-surface-variant mb-4">15+ años de experiencia</p>
+<button class="bg-surface-variant hover:bg-primary px-6 py-2 rounded text-white font-label-md transition-all">Contactar</button>
+</div>
+<!-- Expert 3 -->
+<div class="text-center group">
+<div class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-2 border-transparent group-hover:border-primary transition-all p-1">
+<img class="w-full h-full object-cover rounded-full" data-alt="A professional headshot of a mid-40s male executive with a focused and strategic expression. He is wearing a tailored grey suit. The shot is captured in a high-contrast style with dark shadows and warm highlights, suggesting a dynamic and high-performance business environment. The background shows hints of a metropolitan skyline at night." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMSYGbkTATP4GG2f4-17qSlMrtp4Aumy-wka5CbKcSLUcpfqrSR1E1dmVOgd_0T8LrKydPnaKPSRMuyH2E5lQQcHM7CEmD97yaA64htSfMeZ7Is1wQ4uL44YHy6HiozUMHErRTThrM9VmhIwVCXU80cJvdsCEgoG34r_GbxpYt54awnGLAzaEjBj2tY3mpQFNilv8sQtozCP9saLpQ6pW-R5OnxByqv07_kfuP5loQHRDDzzu26EW5UMuPmP7DIFfziAKymZ5MtT0"/>
+</div>
+<h4 class="font-headline-md text-white">Ignacio Torres</h4>
+<p class="text-secondary font-label-md mb-2">Director Industrial</p>
+<p class="text-caption text-on-surface-variant mb-4">20+ años de experiencia</p>
+<button class="bg-surface-variant hover:bg-primary px-6 py-2 rounded text-white font-label-md transition-all">Contactar</button>
+</div>
+<!-- Expert 4 -->
+<div class="text-center group">
+<div class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-2 border-transparent group-hover:border-primary transition-all p-1">
+<img class="w-full h-full object-cover rounded-full" data-alt="A professional headshot of a sophisticated female executive in a navy blue blazer. She conveys warmth and confidence. The setting is a luxury office with wooden paneling and soft focus on architectural details in the background. The lighting is elegant and professional, suitable for a top-tier institutional real estate brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzfh3eCnSktKXViqTs8lPWJNlvA7sbBw3fLLXRtlj6M4wZNAqGVr1KEyuxin7MG4KspupVUmlnp8xVBLFwAg-v_pX8oL3MqGVuwmeYUJbG1IJxVEpXL_-ALP5WrLUh5AqUeFbTh8sTJt_sLoCwiFP1i7LULgymJ4wUhufiqQZfPA4TUUsO2ODl2HYhiFO00a_JGvbYBcvICapcuaAeL54EAglaNUPr0i3lzqaVLmeyFBc6_OMFp5O_1X6UIy0lAgc0bVX3NLXLZao"/>
+</div>
+<h4 class="font-headline-md text-white">Camila Lagos</h4>
+<p class="text-secondary font-label-md mb-2">Gerente Retail</p>
+<p class="text-caption text-on-surface-variant mb-4">12+ años de experiencia</p>
+<button class="bg-surface-variant hover:bg-primary px-6 py-2 rounded text-white font-label-md transition-all">Contactar</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. Testimonials & Logos -->
+<section class="py-xl bg-surface-container-low border-y border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="text-center font-headline-lg text-white mb-16">Empresas que confían en nosotros</h2>
+<div class="flex flex-wrap justify-center items-center gap-12 mb-24 opacity-40 grayscale hover:grayscale-0 transition-all">
+<div class="text-2xl font-bold text-white tracking-widest">FALABELLA</div>
+<div class="text-2xl font-bold text-white tracking-widest">SODIMAC</div>
+<div class="text-2xl font-bold text-white tracking-widest">LATAM</div>
+<div class="text-22 font-bold text-white tracking-widest">CENCOSUD</div>
+<div class="text-2xl font-bold text-white tracking-widest">BANCO DE CHILE</div>
+</div>
+<div class="max-w-4xl mx-auto glass-panel p-12 rounded-2xl relative">
+<span class="material-symbols-outlined text-secondary text-6xl absolute -top-8 left-8">format_quote</span>
+<p class="font-body-lg text-white italic mb-8">"Colliers Chile no solo nos ayudó a encontrar la ubicación perfecta para nuestro nuevo centro logístico, sino que su asesoría técnica nos ahorró millones en costos operativos a largo plazo. Son verdaderos socios estratégicos."</p>
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 bg-slate-800 rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a corporate client executive, a male in his 50s with a kind and trustworthy expression. He is dressed in business casual attire with a light blue shirt. The lighting is soft and natural, emphasizing his satisfaction and authentic testimonial. The background is a modern, light-filled office space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-rkwlvtOmTSJiMsL91GAe_CGx5ngKfSl00PUSIr9wUo4KVWOACiC4LVESdOgcmyan5zt-kGORAo9EiT_M1H6t24EjcGUOPpl0wJ8aAiebnxLwj3sYXqAf3BnlsBwshh_SsBXFFKDQTfPPCr-17XevLgmRJc8OTgWAy477vW5dO2Oph1l0cjHwaKXBh9Jsy-YrPjv49vtnGPcSEiK0JoM_y8OMo65f4g79Wmj4frADtUtR6Uk5sbgRk11NA9OtdCBUtXPvy-iy2uY"/>
+</div>
+<div>
+<h5 class="font-headline-md text-white">Andrés Domínguez</h5>
+<p class="font-caption text-on-surface-variant uppercase tracking-widest">Gerente de Infraestructura, Falabella</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 10. Final CTA -->
+<section class="py-xl bg-slate-950">
+<div class="max-w-7xl mx-auto px-8">
+<div class="bg-gradient-to-r from-blue-900/40 to-slate-900 rounded-3xl overflow-hidden border border-blue-500/30 flex flex-col md:flex-row shadow-2xl">
+<div class="p-12 md:w-1/2">
+<h2 class="font-display-lg text-white mb-6">¿Listo para tomar la mejor decisión inmobiliaria?</h2>
+<p class="font-body-lg text-on-surface-variant mb-12">Nuestros expertos están listos para analizar tu requerimiento y entregarte una propuesta de valor en menos de 24 horas.</p>
+<div class="space-y-6 mb-12">
+<div class="flex items-center gap-4 text-white">
+<span class="material-symbols-outlined text-primary">call</span>
+<span class="font-headline-md">+56 2 2489 1000</span>
+</div>
+<div class="flex items-center gap-4 text-white">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span class="font-headline-md">contacto@colliers.cl</span>
+</div>
+</div>
+<a class="inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 rounded-full font-label-md transition-all shadow-lg shadow-emerald-900/20" href="https://wa.me/56900000000">
+<span class="material-symbols-outlined">chat</span> Chatea por WhatsApp
+                    </a>
+</div>
+<div class="bg-surface-container p-12 md:w-1/2 border-l border-outline-variant/20">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-caption text-on-surface-variant mb-2 uppercase tracking-widest">Nombre completo</label>
+<input class="w-full bg-surface-container-low border border-outline-variant text-white p-3 rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none" type="text"/>
+</div>
+<div>
+<label class="block text-caption text-on-surface-variant mb-2 uppercase tracking-widest">Empresa</label>
+<input class="w-full bg-surface-container-low border border-outline-variant text-white p-3 rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-caption text-on-surface-variant mb-2 uppercase tracking-widest">Email Corporativo</label>
+<input class="w-full bg-surface-container-low border border-outline-variant text-white p-3 rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none" type="email"/>
+</div>
+<div>
+<label class="block text-caption text-on-surface-variant mb-2 uppercase tracking-widest">Teléfono</label>
+<input class="w-full bg-surface-container-low border border-outline-variant text-white p-3 rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block text-caption text-on-surface-variant mb-2 uppercase tracking-widest">Mensaje / Requerimiento</label>
+<textarea class="w-full bg-surface-container-low border border-outline-variant text-white p-3 rounded focus:border-primary focus:ring-1 focus:ring-primary outline-none resize-none" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary-container text-on-primary-container font-label-md py-4 rounded-lg hover:bg-primary transition-all" type="submit">Solicitar asesoría</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- 11. Footer -->
+<footer class="bg-slate-950 w-full py-16 px-8 border-t border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div>
+<div class="text-xl font-bold text-white mb-6">Colliers Chile</div>
+<p class="text-slate-500 font-inter text-sm mb-6">Líderes mundiales en servicios inmobiliarios y gestión de inversiones. Elevamos el potencial de la propiedad para acelerar el éxito de nuestros clientes.</p>
+<div class="flex gap-4">
+<a class="text-slate-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-slate-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-slate-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">trending_up</span></a>
+</div>
+</div>
+<div>
+<h5 class="text-white font-semibold mb-6 uppercase tracking-widest text-xs">Servicios</h5>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-amber-400 font-inter text-sm transition-transform hover:translate-x-1 inline-block" href="#">Oficinas</a></li>
+<li><a class="text-slate-500 hover:text-amber-400 font-inter text-sm transition-transform hover:translate-x-1 inline-block" href="#">Industrial &amp; Logística</a></li>
+<li><a class="text-slate-500 hover:text-amber-400 font-inter text-sm transition-transform hover:translate-x-1 inline-block" href="#">Retail</a></li>
+<li><a class="text-slate-500 hover:text-amber-400 font-inter text-sm transition-transform hover:translate-x-1 inline-block" href="#">Tasaciones</a></li>
+<li><a class="text-slate-500 hover:text-amber-400 font-inter text-sm transition-transform hover:translate-x-1 inline-block" href="#">Asset Management</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-semibold mb-6 uppercase tracking-widest text-xs">Compañía</h5>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-amber-400 font-inter text-sm transition-transform hover:translate-x-1 inline-block" href="#">Sobre Nosotros</a></li>
+<li><a class="text-slate-500 hover:text-amber-400 font-inter text-sm transition-transform hover:translate-x-1 inline-block" href="#">Expertos</a></li>
+<li><a class="text-slate-500 hover:text-amber-400 font-inter text-sm transition-transform hover:translate-x-1 inline-block" href="#">Carreras</a></li>
+<li><a class="text-slate-500 hover:text-amber-400 font-inter text-sm transition-transform hover:translate-x-1 inline-block" href="#">Inversionistas</a></li>
+<li><a class="text-slate-500 hover:text-amber-400 font-inter text-sm transition-transform hover:translate-x-1 inline-block" href="#">Sustentabilidad</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-semibold mb-6 uppercase tracking-widest text-xs">Ubicación</h5>
+<p class="text-slate-500 font-inter text-sm mb-4">Av. Apoquindo 3000, Piso 22.<br/>Las Condes, Santiago, Chile.</p>
+<p class="text-slate-500 font-inter text-sm mb-2">T: +56 2 2489 1000</p>
+<p class="text-slate-500 font-inter text-sm">E: contacto@colliers.cl</p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-slate-500 font-inter text-sm">© 2024 Colliers International Chile. Todos los derechos reservados.</p>
+<div class="flex gap-8">
+<a class="text-slate-500 hover:text-white transition-colors text-sm" href="#">Privacidad</a>
+<a class="text-slate-500 hover:text-white transition-colors text-sm" href="#">Términos y Condiciones</a>
+</div>
+</div>
+</footer>
+<!-- 12. Floating WhatsApp button -->
+<a class="fixed bottom-8 right-8 z-[60] bg-emerald-500 text-white flex items-center gap-3 px-6 py-3 rounded-full shadow-2xl hover:bg-emerald-400 transition-all hover:scale-105 active:scale-95 group" href="https://wa.me/56900000000">
+<span class="material-symbols-outlined">chat</span>
+<span class="font-label-md hidden md:inline">Chatea con nosotros</span>
+</a>
+</body></html>
